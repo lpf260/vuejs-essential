@@ -2,16 +2,19 @@
   <div id="wrap">
     <TheHeader/>
     <!--在单文件组件中，没有内容的组件应该是闭合的，所以不要忘记使用斜杠/进行闭合-->
+    <TheFooter/>
   </div>
 </template>
 
 <script>
 import TheHeader from "@/components/layouts/TheHeader";
+import TheFooter from "@/components/layouts/TheFooter";
 
 export default {
   name: "App",
   components: {
-    TheHeader
+    TheHeader,
+    TheFooter
   }
 };
 </script>
