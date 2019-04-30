@@ -10,7 +10,7 @@
               v-for="(item,index) in contacts"
               v-bind:key="index"
               :href="item.link"
-              :title="item.title"
+              v-title="item.title"
               :style="contactStyle"
               target="_blank"
             >
@@ -31,7 +31,13 @@
               <ul class="list-unstyled">
                 <li v-for="(item,index) in sponsor.list" v-bind:key="index">
                   <a :href="item.link" :title="item.title">
-                    <img :src="item.logo" :alt="item.title" class="footer-sponsor-link" width="98">
+                    <img
+                      v-title="item.title"
+                      :src="item.logo"
+                      :alt="item.title"
+                      class="footer-sponsor-link"
+                      width="98"
+                    >
                   </a>
                 </li>
               </ul>
@@ -68,8 +74,13 @@
 </template>
 
 <script>
+import title from "@/directives/title";
+
 export default {
   name: "TheFooter",
+  directives: {
+    title
+  },
   data() {
     return {
       description: "VuejsCaff是一个学习社区",
