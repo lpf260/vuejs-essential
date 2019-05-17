@@ -21,7 +21,7 @@
     </ul>
     <div v-else class="nav navbar-nav github-login">
       <!--<router-link> 组件支持用户在具有路由功能的应用中导航，通过 <router-link> 上的 to 属性可以指定目标地址，这里是一个字符串 /auth/register，对应路由配置中的 path。-->
-      <router-link to="/auth/register" class="btn btn-default login-btn">
+      <router-link to="/auth/login" class="btn btn-default login-btn">
         <i class="fa fa-user"></i> 登 录
       </router-link>
       <router-link to="/auth/register" class="btn btn-default login-btn">
@@ -50,7 +50,14 @@ export default {
   },
   methods: {
     logout() {
-      this.$store.dispatch("logout");
+      this.$swal({
+        text: "你确定要退出吗？",
+        confirmButtonText: "退出"
+      }).then(res => {
+        if (res.value) {
+          this.$store.dispatch("logout");
+        }
+      });
     }
   }
 };

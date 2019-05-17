@@ -36,6 +36,11 @@ export default {
             // 显示注册成功
             vm.showMsg("注册成功");
             break;
+
+          case "Login":
+            //显示登陆成功
+            vm.showMsg("登陆成功");
+            break;
         }
       } else if (logout) {
         vm.showMsg("操作成功");
