@@ -4,8 +4,8 @@
     <child
       v-show="isShow"
       @update:isShow="function(bol){
-      //console.log(bol);
-      isShow = bol;
+        //console.log(bol)
+        isShow = bol;
       }"
     />
   </div>

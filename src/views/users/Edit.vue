@@ -4,8 +4,10 @@
       <div class="box">
         <div class="padding-md">
           <div class="list-group text-center">
-            <i class="text-md fa fa-user"></i>
-            用户名
+            <a>
+              <i class="text-md fa fa-user"></i>
+              用户名
+            </a>
           </div>
         </div>
       </div>
