@@ -16,7 +16,7 @@ export default [{
   },
   {
     path: '/users/1/edit',
-    name: 'UserEdit',
+    name: 'EditUsers',
     component: () => import('@/views/users/Edit')
   },
   {
@@ -29,5 +29,9 @@ export default [{
     path: "/test/sync",
     name: "Sync",
     component: () => import("@/components/test/Test")
+  }, {
+    path: "/test/next",
+    name: "next",
+    component: () => import("@/components/test/next")
   }
 ];

@@ -18,7 +18,7 @@
             </a>
           </div>
 
-          <br>
+          <br />
 
           <span v-html="designer"></span>
         </div>
@@ -37,7 +37,7 @@
                       :alt="item.title"
                       class="footer-sponsor-link"
                       width="98"
-                    >
+                    />
                   </a>
                 </li>
               </ul>
@@ -111,33 +111,7 @@ export default {
                 `,
       sponsor: {
         title: "赞助商",
-        list: [
-          {
-            logo:
-              "https://lccdn.phphub.org/uploads/banners/bQawWl3vT5dc2lYx5JZ7.png",
-            title: "本站服务器由 UCloud 赞助",
-            link:
-              "http://www.ucloud.cn/?utm_source=zanzhu&utm_campaign=phphub&utm_medium=display&utm_content=yejiao&ytag=phphubyejiao"
-          },
-          {
-            logo:
-              "https://lccdn.phphub.org/uploads/banners/yGLIR0idW7zsInjsNmzr.png",
-            title: "本站 CDN 服务由七牛赞助",
-            link: "http://www.qiniu.com/?utm_source=phphub"
-          },
-          {
-            logo:
-              "https://lccdn.phphub.org/uploads/banners/XPtLlZmIN1cQbLuDFEON.png",
-            title: "Composer 镜像赞助商",
-            link: "https://www.upyun.com/"
-          },
-          {
-            logo:
-              "https://lccdn.phphub.org/uploads/banners/JpTCK6OKYBIrBIWdtob8.png",
-            title: "订阅邮件赞助商：SendCloud",
-            link: "http://www.sendcloud.net/"
-          }
-        ]
+        list: []
       },
       statistics: {
         title: "统计信息",
