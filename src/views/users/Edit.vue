@@ -18,6 +18,9 @@
         </div>
       </div>
     </div>
+
+    <!-- 点击导航时，<router-view>会渲染路径匹配到的视图组件，当然我们需要先配置路由。 -->
+    <router-view />
   </div>
 </template>
 

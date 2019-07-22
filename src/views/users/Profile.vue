@@ -89,7 +89,25 @@ export default {
     }
   },
   methods: {
-    updateProfile(e) {}
+    updateProfile(e) {
+      this.$nextTick(() => {
+        setTimeout(() => {
+          if (e.target.canSubmit) {
+            this.$store.dispatch("updateUser", {
+              name: this.username,
+              sex: this.sex,
+              hobbies: this.hobbies,
+              introduction: this.introduction
+            });
+
+            alert("修改成功");
+          }
+        });
+      });
+    }
   }
 };
 </script>
+
+<style scoped>
+</style>

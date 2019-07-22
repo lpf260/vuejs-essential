@@ -16,7 +16,7 @@ const router = new Router({
 router.beforeEach((to, from, next) => {
   const auth = router.app.$options.store.state.auth;
 
-  if (auth && to.path.indexOf('/auth/') !== -1) {
+  if ((auth && to.path.indexOf('/auth/') !== -1) || (!auth && to.meta.auth)) {
     // 如果当前用户已登录，且目标路由包含/auth/ 就跳转到首页
     next('/')
   } else {

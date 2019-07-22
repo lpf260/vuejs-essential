@@ -12,7 +12,7 @@
 export default {
   data() {
     return {
-      msg: "Hello World",
+      msg: "Hello Vue.",
       msg1: "",
       msg2: "",
       msg3: ""
@@ -25,6 +25,7 @@ export default {
       this.$nextTick(() => {
         this.msg2 = this.$refs.msgDiv.innerHTML;
       });
+      this.msg3 = this.$refs.msgDiv.innerHTML;
     }
   }
 };
