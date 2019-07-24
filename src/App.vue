@@ -1,12 +1,12 @@
 <template>
   <div id="wrap">
-    <TheHeader/>
+    <TheHeader />
     <div id="main-container" class="container main-container">
       <!--<router-view> 是一个功能组件，它会渲染路径匹配到的视图组件。添加 <div id="main-container"> 元素，是为了保持样式一致。-->
-      <router-view/>
+      <router-view />
     </div>
     <!--在单文件组件中，没有内容的组件应该是闭合的，所以不要忘记使用斜杠/进行闭合-->
-    <TheFooter/>
+    <TheFooter />
   </div>
 </template>
 
@@ -41,4 +41,5 @@ $fa-font-path: "~font-awesome/fonts/";
 @import "~font-awesome/scss/font-awesome";
 @import "./styles/main";
 @import "./styles/extra";
+@import "simplemde/dist/simplemde.min.css";
 </style>

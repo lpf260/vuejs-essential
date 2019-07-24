@@ -100,7 +100,8 @@ export default {
               introduction: this.introduction
             });
 
-            alert("修改成功");
+            // 删除alert 使用实例的$message的show方法
+            this.$message.show("修改成功");
           }
         });
       });

@@ -24,6 +24,20 @@ export default [{
       meta: {
         auth: true // 使用meta选项配置路由的元信息，其值可以是任意类型的数据，我们可以从路由对象中访问该值，如to.meta.auth
       }
+    }, {
+      path: '/users/1/edit_avatar',
+      name: 'EditAvatar',
+      component: () => import('@/views/users/Avatar.vue'),
+      mata: {
+        auth: true
+      }
+    }, {
+      path: '/users/1/edit_password',
+      name: 'EditPassword',
+      component: () => import('@/views/users/Password.vue'),
+      meta: {
+        auth: true
+      }
     }]
   },
   {
@@ -40,5 +54,12 @@ export default [{
     path: "/test/next",
     name: "next",
     component: () => import("@/components/test/next")
+  }, {
+    path: "/articles/create",
+    name: "Create",
+    component: () => import("@/views/articles/Create"),
+    meta: {
+      auth: true
+    }
   }
 ];
